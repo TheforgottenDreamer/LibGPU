@@ -1,0 +1,8 @@
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/CMakeFiles/LibGPU.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/CMakeFiles/Experimental.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/CMakeFiles/Nightly.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/CMakeFiles/Continuous.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/CMakeFiles/NightlyMemoryCheck.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/CMakeFiles/RUN_TESTS.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/CMakeFiles/ALL_BUILD.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/CMakeFiles/ZERO_CHECK.dir
