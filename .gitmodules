@@ -6,3 +6,9 @@
 	path = ThirdParty/glad
 	url = https://github.com/Dav1dde/glad.git
 	branch = c
+[submodule "ThirdParty/json"]
+	path = ThirdParty/json
+	url = https://github.com/nlohmann/json.git
+[submodule "ThirdParty/glslang"]
+	path = ThirdParty/glslang
+	url = https://github.com/KhronosGroup/glslang.git
