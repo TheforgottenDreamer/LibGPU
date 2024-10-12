@@ -1,1 +1,1 @@
-Requires Vulkan SDK: link[https://vulkan.lunarg.com/]
+Requires Vulkan SDK: https://vulkan.lunarg.com/
