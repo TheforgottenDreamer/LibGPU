@@ -73,6 +73,6 @@ int main(int, char**){
     glfwDestroyWindow(window);
     glfwTerminate();*/
 
-    app.run();
+    app.Run();
     return 0;
 }

@@ -16,6 +16,10 @@
 
 #include <GLFW/glfw3.h>
 
+#include <glm/glm.hpp>
+
+#include "Graphics.hpp"
+
 class App
 {
 private:

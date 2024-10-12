@@ -21,3 +21,9 @@ C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/glfw/d
 C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/json/CMakeFiles/RUN_TESTS.dir
 C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/json/CMakeFiles/INSTALL.dir
 C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/json/CMakeFiles/ALL_BUILD.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/glm/CMakeFiles/RUN_TESTS.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/glm/CMakeFiles/INSTALL.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/glm/CMakeFiles/ALL_BUILD.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/glm/glm/CMakeFiles/glm.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/glm/glm/CMakeFiles/RUN_TESTS.dir
+C:/Users/Thefo/Projects/Code/C++/LibGPU/out/build/WindowsDebug/ThirdParty/glm/glm/CMakeFiles/INSTALL.dir

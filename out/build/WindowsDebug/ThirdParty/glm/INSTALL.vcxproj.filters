@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\out\build\WindowsDebug\CMakeFiles\ce6bbbdeabd02f40b0087c30b76bf8a4\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{594CBE2B-7031-346D-BE6B-949F36F2E71E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

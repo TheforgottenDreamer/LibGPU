@@ -4,10 +4,10 @@
     <ClCompile Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\src\App.cpp">
+    <ClCompile Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\src\Graphics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\src\Graphics.cpp">
+    <ClCompile Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\src\App.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\ThirdParty\glad\src\glad.c">
@@ -15,10 +15,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\src\App.hpp">
+    <ClInclude Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\src\Graphics.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\src\Graphics.hpp">
+    <ClInclude Include="C:\Users\Thefo\Projects\Code\C++\LibGPU\src\App.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

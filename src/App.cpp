@@ -44,6 +44,9 @@ void App::Run() {
 
     while (!glfwWindowShouldClose(Window)) {
         WindowUpdate();
+        libgpu::ClearColor(glm::vec4(0.871, 0.859, 0.153, 1));
+        glClear(GL_COLOR_BUFFER_BIT);
+        glfwSwapBuffers(Window);
     }
 }
 
@@ -52,6 +55,5 @@ void App::WindowUpdate() {
 }
 
 void App::Render() {
-
 
 }
