@@ -24,6 +24,7 @@ def Compile_Shaders(Resource_Path):
         print(f"Output folder: {Output_Folder}")
 
         vertex_shader = glob.glob(f"{Resource_Path}/Shaders/{Shader_Folder}/*.vert")
+        
         fragment_shader = glob.glob(f"{Resource_Path}/Shaders/{Shader_Folder}/*.frag")
         if(not os.path.exists(f"{Resource_Path}/Shaders/{Output_Folder}/")):
             try:
@@ -32,7 +33,7 @@ def Compile_Shaders(Resource_Path):
                 print(f"Directory '{Resource_Path}/Shaders/{Output_Folder}/' already exists.")
                 continue
             except PermissionError:
-                print(f"Permission denied: Unable to create '{Resource_Path}/Shaders/{Output_Folder}/'.")
+                print(f"Permission denied: Unable to create '{Resource_Path}/Shaders/{Output_Folder}/'")
             except Exception as e:
                 print(f"An error occurred: {e}")
 
