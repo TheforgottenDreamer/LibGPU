@@ -3,7 +3,7 @@
 - Requires llvm/clang: https://clang.llvm.org
 - Requires Python: https://www.python.org/downloads/
 - Cmake: https://cmake.org
-- https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/ or Through VisualStudio
+- Windows Sdk: https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/ or Through VisualStudio
 
 # Libraries
 - vulkan
