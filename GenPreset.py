@@ -28,5 +28,3 @@ compile_json = json.dumps(compile_Config, indent=4)
 
 with open("CMakePresets.json", "w") as file:
     file.write(compile_json)
-print(compile_json)
-
