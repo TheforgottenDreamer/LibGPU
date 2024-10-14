@@ -12,3 +12,5 @@
 - [Glfw](https://github.com/glfw/glfw/tree/b35641f4a3c62aa86a0b3c983d163bc0fe36026d)
 - [Json](https://github.com/nlohmann/json/tree/b36f4c477c40356a0ae1204b567cca3c2a57d201)
 - [glm](https://github.com/g-truc/glm/tree/33b4a621a697a305bc3a7610d290677b96beb181)
+
+Before opening cmake project open the folder in cmd and run ```python GenPreset.py```
