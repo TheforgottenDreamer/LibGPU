@@ -24,8 +24,12 @@ def Compile_Shaders(Resource_Path):
         print(f"Output folder: {Output_Folder}")
 
         vertex_shader = glob.glob(f"{Resource_Path}/Shaders/{Shader_Folder}/*.vert")
-        
         fragment_shader = glob.glob(f"{Resource_Path}/Shaders/{Shader_Folder}/*.frag")
+        geometry_shader = glob.glob(f"{Resource_Path}/Shaders/{Shader_Folder}/*.geom")
+        tessellation_control_shader = glob.glob(f"{Resource_Path}/Shaders/{Shader_Folder}/*.tesc")
+        tessellation_evaluation_shader = glob.glob(f"{Resource_Path}/Shaders/{Shader_Folder}/*.tese")
+        compute_shader = glob.glob(f"{Resource_Path}/Shaders/{Shader_Folder}/*.comp")
+
         if(not os.path.exists(f"{Resource_Path}/Shaders/{Output_Folder}/")):
             try:
                 os.mkdir(f"{Resource_Path}/Shaders/{Output_Folder}/")
@@ -41,13 +45,34 @@ def Compile_Shaders(Resource_Path):
         if vertex_shader:
             os.system(f"glslang -V {vertex_shader[0]} -o {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Vert.spv")
             os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Vert.spv --reflect")
-            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Vert.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Vert.glsl -glsl --flatten-ubo")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Vert.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Vert.glsl --version 420")
             os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Vert.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Vert.hlsl --hlsl")
         if fragment_shader:
             os.system(f"glslang -V {fragment_shader[0]} -o {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Frag.spv")
             os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Frag.spv --reflect")
-            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Frag.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Frag.glsl --glsl --flatten-ubo")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Frag.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Frag.glsl --version 420")
             os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Frag.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Frag.hlsl --hlsl")
+        if geometry_shader:
+            os.system(f"glslang -V {geometry_shader[0]} -o {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Geom.spv")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Geom.spv --reflect")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Geom.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Geom.glsl --version 420")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Geom.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Geom.hlsl --hlsl")
+        if tessellation_control_shader:
+            os.system(f"glslang -V {tessellation_control_shader[0]} -o {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Tesc.spv")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Tesc.spv --reflect")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Tesc.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Tesc.glsl --version 420")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Tesc.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Tesc.hlsl --hlsl")
+        if tessellation_evaluation_shader:
+            os.system(f"glslang -V {tessellation_evaluation_shader[0]} -o {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Tese.spv")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Tese.spv --reflect")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Tese.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Tese.glsl --version 420")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Tese.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Tese.hlsl --hlsl")
+        if compute_shader:
+            os.system(f"glslang -V {compute_shader[0]} -o {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Comp.spv")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Comp.spv --reflect")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Comp.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Comp.glsl --version 420")
+            os.system(f"spirv-cross {Resource_Path}/Shaders/{Output_Folder}/Spirv_{Shader_Name}_Comp.spv --output {Resource_Path}/Shaders/{Output_Folder}/{Shader_Name}_Comp.hlsl --hlsl")
+
 
 
 if __name__ == "__main__":

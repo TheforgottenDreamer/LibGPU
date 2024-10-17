@@ -14,5 +14,6 @@ layout(location=1) out vec2 FragUV;
 
 void main() {
     gl_Position = UniformObject.ViewMat * UniformObject.ModelMat * vec4(aPosition,1);
-
+    FragColor = aColor;
+    FragUV = aUV;
 }

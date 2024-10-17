@@ -28,6 +28,8 @@ file(COPY "CompileShader.py" DESTINATION "${CMAKE_BINARY_DIR}")
 
 execute_process(COMMAND ${Python_EXECUTABLE} CompileShader.py  Resources)
 
+target_compile_definitions("${CMAKE_PROJECT_NAME}" PUBLIC RESOURCES_PATH="${CMAKE_BINARY_DIR}/Resources/")
+
 add_compile_definitions(${PROJECT_NAME} PUBLIC      
     USING_VULKAN=false
     USING_OPENGL=true

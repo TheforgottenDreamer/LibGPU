@@ -4,10 +4,13 @@
 #include <sstream>
 #include <string>
 #include <fstream>
+#include <filesystem>
+#include <format>
 
 #include <glm/glm.hpp>
 #include <glad/glad.h>
 #include <vulkan/vulkan.hpp>
+#include <d3d12.h>
 
 #include <spirv_cross/spirv_cross.hpp>
 #include <spirv_cross/spirv_glsl.hpp>
@@ -16,28 +19,33 @@
 
 #include <nlohmann/json.hpp>
 
+
+using json = nlohmann::json;
+
+
 namespace libgpu 
 {
+
     void ClearColor(glm::vec4 Color);
 
     class Shader
     {
     private:
 
-        std::string ReadShaderFile(const char* Path);
-
-        struct HLSL {
-
+        struct ShaderJson {
+            std::string Name;
+            std::string output;
         };
 
-        struct ShaderFiles {
-            HLSL HLSLShaders;
-        };
+        std::string ReadShaderFile(std::string Path);
+        void CheckShader(GLuint Shader, GLenum Type);
+        void CheckProgram(GLuint Prog);
+        GLuint CompileOpenglShader(GLenum GlShaderType, ShaderJson MainData);
 
-        /* data */
+        GLuint OpenglShaderID; 
     public:
         
-        Shader(const char* Path);
+        Shader(std::string ShaderName);
         ~Shader();
     };
 
