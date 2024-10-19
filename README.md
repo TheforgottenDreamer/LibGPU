@@ -13,4 +13,7 @@
 - [Json](https://github.com/nlohmann/json/tree/b36f4c477c40356a0ae1204b567cca3c2a57d201)
 - [glm](https://github.com/g-truc/glm/tree/33b4a621a697a305bc3a7610d290677b96beb181)
 
-Before opening cmake project open the folder in cmd and run ```python GenPreset.py```
+Before opening cmake project open the folder in cmd and run ```python GenPreset.py```: Your llvm path must be set in systen environment variables as llvm
+- Windows: https://www.youtube.com/watch?v=Z2k7ZBMZT3Y
+- Linux: https://www.youtube.com/watch?v=Y6_7xaxkPik
+- Mac: https://www.youtube.com/watch?v=-cASjkF94dc
