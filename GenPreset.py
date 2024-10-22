@@ -1,8 +1,8 @@
 import shutil
 import webbrowser
 import json
-
-clang_Path = shutil.which('Clang')
+webbrowser.open_new_tab()
+clang_Path = shutil.which('Clang') 
 clang_pp_Path = shutil.which("Clang++")
 
 compile_Config = {
