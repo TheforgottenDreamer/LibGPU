@@ -14,3 +14,4 @@ CMakeUserPresets.json
 out/
 
 CMakePresets.json
+.vscode/
